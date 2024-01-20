@@ -8,8 +8,9 @@ static struct proc_dir_entry *entry;
 
 static int proc_count(struct seq_file *m, void *v){
 	// TODO: it's all yours
+	struct task_struct *start
 	unsigned int count = 0;
-	for_each_process(m)
+	for_each_process(start)
 		count++;
 	return count;
 }
