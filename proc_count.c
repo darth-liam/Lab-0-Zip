@@ -10,9 +10,7 @@ static int proc_count(struct seq_file *m, void *v){
 	// TODO: it's all yours
 	unsigned int count = 0;
 	for_each_process(m)
-{
-	count++;
-}
+		count++;
 	return count;
 }
 
