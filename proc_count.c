@@ -12,7 +12,9 @@ static int proc_count(struct seq_file *m, void *v){
 	unsigned int count = 0;
 	// Increment a counter for every process
 	for_each_process(start)
+	{
 		count++;
+	}
 	seq_printf(m, "%d\n", count);
 	return 0;
 }
